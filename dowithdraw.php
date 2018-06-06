@@ -30,9 +30,8 @@ $receiver = $_POST['receiver'];
 }
 $balancedb = $balancedb - 0.0005;
 $balance = $balance- 0.0005;
-
     if ($balancedb == $balance){
-
+if ($amount == $balance or $amount < $balance){
         require('./coinpayments.inc.php');
 	$cps = new CoinPaymentsAPI();
 	$cps->Setup('PRIVATE_KEY', 'PUBLIC_KEY');
@@ -51,6 +50,10 @@ $balance = $balance- 0.0005;
 		echo 'Error: '.$result['error']."\n";
 
 	}
+} else{
+	echo "Sorry, but the amount you've entered is more than your balance";
 
-    }
+    } else{
+	echo "Transaction NOT completed. Our system is trying to verify your transaction. Please try again in few minutes";
+}
              
