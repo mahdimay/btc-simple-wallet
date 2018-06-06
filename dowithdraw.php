@@ -51,9 +51,9 @@ if ($amount == $balance or $amount < $balance){
 
 	}
 } else{
-	echo "Sorry, but the amount you've entered is more than your balance";
+	echo "Sorry, but the amount you've entered is more than your balance.";
 
     } else{
-	echo "Transaction NOT completed. Our system is trying to verify your transaction. Please try again in few minutes";
+	echo "Transaction NOT completed. Our system is trying to verify your transaction. Please try again in few minutes.";
 }
              
