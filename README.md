@@ -12,3 +12,7 @@ A very simple bitcoin wallet!
 <p><i>Import sbtcw.sql into your database</i></p>
 <b>NOW YOU ARE DONE!</b>
 <p>Enjoy the script!</b>
+<h2>NOTES</h2>
+<p>- Remember that there is a deposit fee. The deposit fee is 0.5%.</p>
+<p>- Current withdrawal fee is 0.0005 BTC. You need to set it to what coinpayments fee is.</p>
+<p>- The scripts takes 1 minute between deposit and withdrawal of 1 user to make sure everything is fine. This increases the security of the script.</p>
