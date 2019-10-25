@@ -1,5 +1,23 @@
 # btc-simple-wallet
 A very simple bitcoin wallet!
+![bitcoin](https://miro.medium.com/max/1156/1*qhsL7p_ffEc9O6gITiJ4_A.png)
+The script uses **coinpayments** API
+
+## Installation
+To install this script follow the steps below:
+ 1. _Upload the files on your server or host_
+ 2. _Edit **config.php** and enter the info of the database_
+ 3. _In file **dowithdraw.php** enter your private and public key (from coinpayments) at line 38_
+ 4. _In file **new.php** enter your private and public key (from coinpayments) at line 6_
+ 5. _You need to add a **cron** and run file **balance.php** in folder **crons** every 1 minute. This file helps to save some important data on your database and increases the security of the script. This file is **important**._
+ 6. _Import **sbtcw.sql** into your database_
+ 
+ *Now you're done! Enjoy the script!*
+## Notes
+ - Remember that there is a deposit fee. The **deposit fee is 0.5%**.
+ - Current **withdrawal fee is 0.0005 BTC**. You need to set it to what coinpayments fee is.
+ - The **scripts takes 1 minute between deposit and withdrawal** of each user to make sure everything is fine for that specific user. This increases the security of the script.
+=======
 <p>This script uses the CoinPayments API</p>
 <h3>Installation</h3>
 <hr>
@@ -17,3 +35,4 @@ A very simple bitcoin wallet!
 <p><li> Remember that there is a deposit fee. The deposit fee is 0.5%.</p>
 <p><li> The current withdrawal fee is 0.0005 BTC. You need to set it to what the coinpayments fee is.</p>
 <p><li> These scripts takes 1 minute between each deposit and withdrawal of each user to ensure that  everything is fine for that specific user. This increases the security of the script.</p>
+
