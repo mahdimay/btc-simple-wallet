@@ -1,6 +1,8 @@
+![](https://s.yimg.com/ny/api/res/1.2/gv6myUcphq.O3RyWKgft2A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/ccn_656/15d4c87211f8e1969e4a79f2f13c372c)
 # btc-simple-wallet
 A very simple bitcoin wallet!
-<p>The script uses coinpayments API</p>
+<p>The script uses [coinpayments API](http://https://www.coinpayments.net/apidoc "coinpayments API")</p>
+![](https://pbs.twimg.com/profile_images/988561676910837761/3dVlPP4k_200x200.jpg)
 <h3>Installation</h3>
 <hr>
 <p>To install this script follow the steps bellow</p>
