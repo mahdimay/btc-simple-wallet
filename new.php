@@ -1,7 +1,7 @@
 <?php
 include_once('config.php');
 $user = $_POST['user'];
-require('./coinpayments.inc.php');
+require('./includes/coinpayments.inc.php');
 $cps = new CoinPaymentsAPI();
 $cps->Setup('PRIVATE_KEY', 'PUBLIC-KEY');
 
