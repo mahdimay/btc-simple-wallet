@@ -1,5 +1,10 @@
+![](https://s.yimg.com/ny/api/res/1.2/gv6myUcphq.O3RyWKgft2A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/ccn_656/15d4c87211f8e1969e4a79f2f13c372c)
 # btc-simple-wallet
 A very simple bitcoin wallet!
+
+<p>The script uses [coinpayments API](http://https://www.coinpayments.net/apidoc "coinpayments API")</p>
+![](https://pbs.twimg.com/profile_images/988561676910837761/3dVlPP4k_200x200.jpg)
+=======
 ![bitcoin](https://miro.medium.com/max/1156/1*qhsL7p_ffEc9O6gITiJ4_A.png)
 The script uses **coinpayments** API
 
@@ -19,6 +24,7 @@ To install this script follow the steps below:
  - The **scripts takes 1 minute between deposit and withdrawal** of each user to make sure everything is fine for that specific user. This increases the security of the script.
 =======
 <p>This script uses the CoinPayments API</p>
+
 <h3>Installation</h3>
 <hr>
 <p>To install this script follow the steps below</p>
