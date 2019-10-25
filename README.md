@@ -2,7 +2,7 @@
 # btc-simple-wallet
 A very simple bitcoin wallet!
 
-The script uses [coinpayments API](http://https://www.coinpayments.net/apidoc)
+The script uses [coinpayments API](http://www.coinpayments.net/apidoc)
 ![](https://pbs.twimg.com/profile_images/988561676910837761/3dVlPP4k_200x200.jpg)
 =======
 ![bitcoin](https://miro.medium.com/max/1156/1*qhsL7p_ffEc9O6gITiJ4_A.png)
