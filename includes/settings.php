@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?PHP 
+<?PHP
 session_start();
 $filename = basename($_SERVER['REQUEST_URI']);
 
@@ -21,9 +21,9 @@ if ($_SESSION['login']==1){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-     
-           
-          
+
+
+
     <div id="wrapper">
          <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="adjust-nav">
@@ -35,9 +35,9 @@ if ($_SESSION['login']==1){
                     </button>
                      <font color="white"><h1>Simple BTC Wallet</h1></font>
                 </div>
-              
+
                  <span class="logout-spn" >
-                  <a id="logout" class="btn btn-danger btn-lg btn-block" style="color:#fff;">LOGOUT</a>   
+                  <a id="logout" class="btn btn-danger btn-lg btn-block" style="color:#fff;">LOGOUT</a>
 
                 </span>
             </div>
@@ -46,26 +46,26 @@ if ($_SESSION['login']==1){
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-                 
 
 
-                    
-                    <li>
-                        <a href="dash.php" ><i class="fa fa-desktop "></i>Dashboard </a>
-                    </li>
-                   
+
 
                     <li>
-                        <a href="address.php"><i class="fa fa-book "></i>Addresses</a>
+                        <a href="includes/dash.php" ><i class="fa fa-desktop "></i>Dashboard </a>
+                    </li>
+
+
+                    <li>
+                        <a href="includes/address.php"><i class="fa fa-book "></i>Addresses</a>
                     </li>
                     <li>
-                        <a href="withdraw.php"><i class="fa fa-paper-plane "></i>Withdraw</a>
+                        <a href="includes/withdraw.php"><i class="fa fa-paper-plane "></i>Withdraw</a>
                     </li>
                     <li>
-                        <a href="history.php"><i class="fa fa-history "></i>History</a>
+                        <a href="includes/history.php"><i class="fa fa-history "></i>History</a>
                     </li>
                     <li class="active-link">
-                        <a href="settings.php"><i class="fa fa-gear "></i>Settings</a>
+                        <a href="includes/settings.php"><i class="fa fa-gear "></i>Settings</a>
                     </li>
                 </ul>
                             </div>
@@ -74,7 +74,7 @@ if ($_SESSION['login']==1){
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
           <div id="page-inner">
-               
+
                             <input name="curpass" class="form-control" placeholder="Current Password" type="password"/>
                             <br>
 <input name="npass" class="form-control" placeholder="New Password" type="password"/>
@@ -85,22 +85,22 @@ if ($_SESSION['login']==1){
                             <a id="change" class="btn btn-danger btn-lg btn-block">Change</a>
                         </div>
                     </div>
-                    
+
                 <!-- /. ROW  -->
                 <hr />
-                  
-                
+
+
                 <!-- /. ROW  -->
 
             </div>
             </div>
             <div id="alert">
-                
+
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>
     <div class="footer">
-      
+
      <div class="row">
                 <div class="col-lg-12" >
                     &copy;  2018 yourdomain.com | Theme by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a> | Script by: <a href="http://megacrypto.online" style="color:#fff;" target="_blank">Megacrypto</a>
@@ -109,7 +109,7 @@ if ($_SESSION['login']==1){
         </div>
           <script>
        	$('#change').click(function() {
-			      
+
 			 var user = $('input[name=user]').val();
 			 var curpass = $('input[name=curpass]').val();
 			 var npass = $('input[name=npass]').val();
@@ -122,29 +122,29 @@ if ($_SESSION['login']==1){
            curpass:curpass,
            npass:npass,
            rnpass:rnpass
-           
+
         },
         success: function(data) {
            alert(data);
-          
-        }               
+
+        }
     });
 });
 $('#logout').click(function() {
-			      
-			    
+
+
     $.ajax({
         url: 'logout.php',
         type: 'POST',
         data: {
            user:'h'
-           
+
         },
         success: function(logout) {
       $("#alert").html(logout);
-           
-          
-        }               
+
+
+        }
     });
 });
    </script>
@@ -157,8 +157,8 @@ $('#logout').click(function() {
     <script src="assets/js/bootstrap.min.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
-    
-   
+
+
 </body>
 </html>
 <?PHP
