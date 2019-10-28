@@ -1,11 +1,8 @@
 ![](https://s.yimg.com/ny/api/res/1.2/gv6myUcphq.O3RyWKgft2A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/ccn_656/15d4c87211f8e1969e4a79f2f13c372c)
 # btc-simple-wallet
 A very simple bitcoin wallet!
-
-The script uses [coinpayments API](http://www.coinpayments.net/apidoc)
-![](https://pbs.twimg.com/profile_images/988561676910837761/3dVlPP4k_200x200.jpg)
 =======
-![bitcoin](https://miro.medium.com/max/1156/1*qhsL7p_ffEc9O6gITiJ4_A.png)
+![test image size](https://miro.medium.com/max/1156/1*qhsL7p_ffEc9O6gITiJ4_A.png){:height="50px" width="50px"}
 The script uses **coinpayments** API
 
 ## Installation
@@ -42,3 +39,7 @@ To install this script follow the steps below:
 <p><li> The current withdrawal fee is 0.0005 BTC. You need to set it to what the coinpayments fee is.</p>
 <p><li> These scripts takes 1 minute between each deposit and withdrawal of each user to ensure that  everything is fine for that specific user. This increases the security of the script.</p>
 
+### API Configuration
+
+The script uses [coinpayments API](http://www.coinpayments.net/apidoc)
+![](https://pbs.twimg.com/profile_images/988561676910837761/3dVlPP4k_200x200.jpg)
