@@ -17,9 +17,9 @@ if(isset($_POST['email']) && isset($_POST['pass']) && isset($_POST['user'])){
             $sql3 = "INSERT INTO users (user, pass, email) VALUES ('$user', '$pass', '$email')";
             echo "Account Successfully created!";
             if ($con->query($sql3) === TRUE){
-                
+
             }
-            
+
         }
     }
 }

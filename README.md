@@ -2,8 +2,7 @@
 # btc-simple-wallet
 A very simple bitcoin wallet!
 
-Powered by: [coinpayments API documentation](http://https://www.coinpayments.net/apidoc "coinpayments API")
-![coinpayments.net logo](https://pbs.twimg.com/profile_images/988561676910837761/3dVlPP4k_200x200.jpg)
+![bitcoin](https://miro.medium.com/max/1156/1*qhsL7p_ffEc9O6gITiJ4_A.png)
 
 ## Installation
 To install this script follow the steps below:
@@ -15,9 +14,14 @@ To install this script follow the steps below:
  6. _Import **sbtcw.sql** into your database_
 
  *Now you're done! Enjoy the script!*
+ 
 ## Notes
  - Remember that there is a deposit fee. The **deposit fee is 0.5%**.
  - Current **withdrawal fee is 0.0005 BTC**. You need to set it to what coinpayments fee is.
  - The **scripts takes 1 minute between deposit and withdrawal** of each user to make sure everything is fine for that specific user. This increases the security of the script.
 
-![bitcoin](https://miro.medium.com/max/1156/1*qhsL7p_ffEc9O6gITiJ4_A.png)
+
+### API Configuration
+
+The script uses [coinpayments API](http://www.coinpayments.net/apidoc)
+![](https://pbs.twimg.com/profile_images/988561676910837761/3dVlPP4k_200x200.jpg)

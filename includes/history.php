@@ -1,9 +1,9 @@
-<?PHP 
-include_once('config.php');
+<?PHP
+include_once('../config.php');
 session_start();
 $filename = basename($_SERVER['REQUEST_URI']);
 if ($_SESSION['login']==1){
-    
+
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -22,7 +22,7 @@ if ($_SESSION['login']==1){
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-     
+
            <style>
 .alert {
     padding: 20px;
@@ -45,7 +45,7 @@ if ($_SESSION['login']==1){
     color: black;
 }
 </style>
-         
+
     <div id="wrapper">
          <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="adjust-nav">
@@ -57,9 +57,9 @@ if ($_SESSION['login']==1){
                     </button>
                      <font color="white"><h1>Simple BTC Wallet</h1></font>
                 </div>
-              
+
                  <span class="logout-spn" >
-                  <a id="logout" class="btn btn-danger btn-lg btn-block" style="color:#fff;">LOGOUT</a>  
+                  <a id="logout" class="btn btn-danger btn-lg btn-block" style="color:#fff;">LOGOUT</a>
 
                 </span>
             </div>
@@ -68,13 +68,13 @@ if ($_SESSION['login']==1){
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-                 
+
 
 
                     <li>
                         <a href="dash.php" ><i class="fa fa-desktop "></i>Dashboard </a>
                     </li>
-                   
+
 
                     <li>
                         <a href="address.php"><i class="fa fa-book "></i>Addresses</a>
@@ -97,15 +97,15 @@ if ($_SESSION['login']==1){
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>History</h2>   
+                     <h2>History</h2>
                     </div>
-                </div>              
+                </div>
                  <!-- /. ROW  -->
                   <hr />
-                   
-  
+
+
  <div id="alert">
-     
+
  </div>
 
                    <table class="table table-striped table-bordered table-hover">
@@ -120,7 +120,7 @@ if ($_SESSION['login']==1){
                             <tbody>
                                 <?PHP
                                 $user = $_SESSION['user'];
-                               
+
                                 $sql = "SELECT id,tx,receiver,amount FROM history WHERE user='$user'";
                                 $result = $con->query($sql);
                                 while ($row = $result->fetch_assoc()){
@@ -131,41 +131,41 @@ if ($_SESSION['login']==1){
                                     echo "<tr> <td>$amount</td><td>$receiver</td><td>$id</td><td><a href='https://blockchain.info/tx/$tx' target='_blank'>TX</a></td></tr>";
                                 }
                                 ?>
-                                
+
                             </tbody>
                         </table>
-                         
-                 <!-- /. ROW  -->           
+
+                 <!-- /. ROW  -->
     </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>
     <div class="footer">
-      
+
      <div class="row">
                 <div class="col-lg-12" >
                     &copy;  2018 yourdomain.com | Theme by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a> | Script by: <a href="http://megacrypto.online" style="color:#fff;" target="_blank">Megacrypto</a>
                 </div>
             </div>
         </div>
-          
+
 <script>
     $('#logout').click(function() {
-			      
-			    
+
+
     $.ajax({
         url: 'logout.php',
         type: 'POST',
         data: {
            user:'h'
-           
+
         },
         success: function(logout) {
    $("#alert").html(logout);
-           
-          
-        }               
+
+
+        }
     });
 });
 </script>
@@ -177,8 +177,8 @@ if ($_SESSION['login']==1){
     <script src="assets/js/bootstrap.min.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
-    
-  
+
+
 </body>
 </html>
 <?PHP
